@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id = "menu_base593_root" name = "Facturación Electrónica" sequence="1"/>
+            <menuitem id = "sub_base593_settings" name = "Ajustes" parent = "menu_base593_root" sequence = "1"/>
+                <menuitem id = "opt_base593_type_iva_retention" name = "Tipos de IVA" parent = "sub_base593_settings" sequence = "1" action = "base593_type_iva_retention_action"/>
+                <menuitem id = "opt_base593_type_retention" name = "Tipos de Retenciones" parent = "sub_base593_settings" sequence = "2" action = "base593_type_retention_action"/>
+                <menuitem id = "opt_base593_type_person" name = "Tipos de Personas" parent = "sub_base593_settings" sequence = "3" action = "base593_type_person_action"/>
+    </data>
+</odoo>

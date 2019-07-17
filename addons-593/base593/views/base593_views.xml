@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+        <!-- **************************************
+        Vistas para el modelo base593.type.iva.retention
+        ****************************************-->
+        <!-- TREE -->
+        <record id = "base593_Type_Iva_Retention_Tree" model = "ir.ui.view">
+            <field name = "model">base593.type.iva.retention</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Tipos de IVA">
+                    <field name = "code"/>
+                    <field name = "name"/>
+                    <field name = "sri_code"/>
+                    <field name = "percent" widget="Percent"/>
+                </tree>
+            </field>
+        </record>
+        <!-- FORM -->
+        <record id = "base593_Type_Iva_Retention_Form" model = "ir.ui.view">
+            <field name = "model">base593.type.iva.retention</field>
+            <field name = "arch" type = "xml">
+                <form string = "Tipos de IVA">
+                    <sheet>
+                        <group>
+                            <field name = "code"/>
+                            <field name = "name"/>
+                            <field name = "sri_code"/>
+                            <field name = "percent" widget="Percent"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- **************************************
+        Vistas para el modelo base593.type.retention
+        ****************************************-->
+        <!-- TREE -->
+        <record id = "base593_Type_Retention_Tree" model = "ir.ui.view">
+            <field name = "model">base593.type.retention</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Tipos de retenciones">
+                    <field name = "code"/>
+                    <field name = "name"/>
+                    <field name = "sri_code"/>
+                    <field name = "percent" widget="Percent"/>
+                </tree>
+            </field>
+        </record>
+        <!-- FORM -->
+        <record id = "base593_Type_Retention_Form" model = "ir.ui.view">
+            <field name = "model">base593.type.retention</field>
+            <field name = "arch" type = "xml">
+                <form string = "Tipos de retenciones">
+                    <sheet>
+                        <group>
+                            <field name = "code"/>
+                            <field name = "name"/>
+                            <field name = "sri_code"/>
+                            <field name = "percent" widget="Percent"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- **************************************
+        Vistas para el modelo base593.type.person
+        ****************************************-->
+        <!-- TREE -->
+        <record id = "base593_Type_Person_Tree" model = "ir.ui.view">
+            <field name = "model">base593.type.person</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Tipos de personas">
+                    <field name = "code"/>
+                    <field name = "name"/>
+                    <field name = "sri_code"/>
+                </tree>
+            </field>
+        </record>
+        <!-- FORM -->
+        <record id = "base593_Type_Person_Form" model = "ir.ui.view">
+            <field name = "model">base593.type.person</field>
+            <field name = "arch" type = "xml">
+                <form string = "Tipos de personas">
+                    <sheet>
+                        <group>
+                            <field name = "code"/>
+                            <field name = "name"/>
+                            <field name = "sri_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
