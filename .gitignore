@@ -1,7 +1,11 @@
 #Virtualenv
-./bin
-./lib
-./include
+bin/
+lib/
+include/
+share/
+odoo-12.conf
+pip-selfcheck.jason
+
 ./pip-selfcheck.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
