@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ********************************
+        Actions para base593_type_iva_retention
+        **********************************-->
+        <record id = "base593_type_iva_retention_action" model = "ir.actions.act_window">
+            <field name = "name">Tipos de IVA</field>
+            <field name = "res_model">base593.type.iva.retention</field>
+            <field name = "view_mode">tree,form</field>
+        </record> 
+        <!-- TREE -->
+        <record id = "base593_type_iva_retention_tree" model = "ir.actions.act_window.view">
+            <field eval = "1" name = "sequence"/>
+            <field name = "view_mode">tree</field>
+            <field name = "view_id" ref = "base593_Type_Iva_Retention_Tree"/>
+            <field name = "act_window_id" ref = "base593_type_iva_retention_action"/>
+        </record>
+        <!-- FORMA -->
+        <record id = "base593_type_iva_retention_form" model = "ir.actions.act_window.view">
+            <field eval = "2" name = "sequence"/>
+            <field name = "view_mode">form</field>
+            <field name = "view_id" ref = "base593_Type_Iva_Retention_Form"/>
+            <field name = "act_window_id" ref = "base593_type_iva_retention_action"/>
+        </record>
+        <!-- ********************************
+        Actions para base593_type_retention
+        **********************************-->
+        <record id = "base593_type_retention_action" model = "ir.actions.act_window">
+            <field name = "name">Tipos de Retenciones</field>
+            <field name = "res_model">base593.type.retention</field>
+            <field name = "view_mode">tree,form</field>
+        </record> 
+        <!-- TREE -->
+        <record id = "base593_type_retention_tree" model = "ir.actions.act_window.view">
+            <field eval = "1" name = "sequence"/>
+            <field name = "view_mode">tree</field>
+            <field name = "view_id" ref = "base593_Type_Retention_Tree"/>
+            <field name = "act_window_id" ref = "base593_type_retention_action"/>
+        </record>
+        <!-- FORMA -->
+        <record id = "base593_type_retention_form" model = "ir.actions.act_window.view">
+            <field eval = "2" name = "sequence"/>
+            <field name = "view_mode">form</field>
+            <field name = "view_id" ref = "base593_Type_Retention_Form"/>
+            <field name = "act_window_id" ref = "base593_type_retention_action"/>
+        </record>
+        <!-- ********************************
+        Actions para base593_type_person
+        **********************************-->
+        <record id = "base593_type_person_action" model = "ir.actions.act_window">
+            <field name = "name">Tipos de Personas</field>
+            <field name = "res_model">base593.type.person</field>
+            <field name = "view_mode">tree,form</field>
+        </record> 
+        <!-- TREE -->
+        <record id = "base593_type_person_tree" model = "ir.actions.act_window.view">
+            <field eval = "1" name = "sequence"/>
+            <field name = "view_mode">tree</field>
+            <field name = "view_id" ref = "base593_Type_Person_Tree"/>
+            <field name = "act_window_id" ref = "base593_type_person_action"/>
+        </record>
+        <!-- FORMA -->
+        <record id = "base593_type_person_form" model = "ir.actions.act_window.view">
+            <field eval = "2" name = "sequence"/>
+            <field name = "view_mode">form</field>
+            <field name = "view_id" ref = "base593_Type_Person_Form"/>
+            <field name = "act_window_id" ref = "base593_type_person_action"/>
+        </record>
+    </data>
+</odoo>

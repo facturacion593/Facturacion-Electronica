@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_administrator593" model="res.groups">
+            <field name="name">Administrador 593</field>
+            <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+            <field name="comment">Administrador del sistema de facturación 593</field>
+        </record>
+    </data>
+</odoo>
