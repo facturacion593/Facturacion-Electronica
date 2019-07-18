@@ -92,5 +92,63 @@
                 </form>
             </field>
         </record>
+        <!-- **************************************
+        Vistas para el modelo base593.type.document
+        ****************************************-->
+        <!-- TREE -->
+        <record id = "base593_Type_Document_Tree" model = "ir.ui.view">
+            <field name = "model">base593.type.document</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Tipos de documento">
+                    <field name = "code"/>
+                    <field name = "name"/>
+                    <field name = "sri_code"/>
+                </tree>
+            </field>
+        </record>
+        <!-- FORM -->
+        <record id = "base593_Type_Document_Form" model = "ir.ui.view">
+            <field name = "model">base593.type.document</field>
+            <field name = "arch" type = "xml">
+                <form string = "Tipos de documento">
+                    <sheet>
+                        <group>
+                            <field name = "code"/>
+                            <field name = "name"/>
+                            <field name = "sri_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- **************************************
+        Vistas para el modelo base593.document.satus
+        ****************************************-->
+        <!-- TREE -->
+        <record id = "base593_Document_Status_Tree" model = "ir.ui.view">
+            <field name = "model">base593.document.status</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Estado de documentos">
+                    <field name = "code"/>
+                    <field name = "name"/>
+                    <field name = "sri_code"/>
+                </tree>
+            </field>
+        </record>
+        <!-- FORM -->
+        <record id = "base593_Document_Status_Form" model = "ir.ui.view">
+            <field name = "model">base593.document.status</field>
+            <field name = "arch" type = "xml">
+                <form string = "Tipos de documento">
+                    <sheet>
+                        <group>
+                            <field name = "code"/>
+                            <field name = "name"/>
+                            <field name = "sri_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
     </data>
 </odoo>

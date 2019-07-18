@@ -2,3 +2,5 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 base593_type_iva,type_iva,model_base593_type_iva_retention,base593.group_administrator593,1,1,1,1
 base593_type_retention,type_retention,model_base593_type_retention,base593.group_administrator593,1,1,1,1
 base593_type_person,type_person,model_base593_type_person,base593.group_administrator593,1,1,1,1
+base593_type_document,type_document,model_base593_type_document,base593.group_administrator593,1,1,1,1
+base593_document_status,document_status,model_base593_document_status,base593.group_administrator593,1,1,1,1
