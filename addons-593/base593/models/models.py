@@ -60,3 +60,32 @@ class base593_type_person(models.Model):
     code = fields.Char(u'Código Interno:', size=4, required=True )
     name = fields.Char(u'Nombre:', size = 50, required=True)
     sri_code = fields.Char(u'Código SRI:', size = 4, required=True)
+
+
+class base593_type_document(models.Model):
+    _name = 'base593.type.document'
+    _description = 'Modelo que almacena los tipos de documentos (RUC, CI, Pasaporte...)'
+
+    _sql_constraints = [
+        ('unique_code', 'unique(code)', u'Código interno ya está en uso'),
+        ('unique_sri_code', 'unique(sri_code)', u'Código de SRI ya está en uso'),
+    ]
+
+    code = fields.Char(u'Código Interno:', size=4, required=True )
+    name = fields.Char(u'Nombre:', size = 50, required=True)
+    sri_code = fields.Char(u'Código SRI:', size = 4, required=True)
+
+
+class base593_document_status(models.Model):
+    _name = 'base593.document.status'
+    _description = 'Modelo que almacena los tipos de estados de un documentos para el SRI (Autorizado, Pendiente...)'
+
+    _sql_constraints = [
+        ('unique_code', 'unique(code)', u'Código interno ya está en uso'),
+        ('unique_sri_code', 'unique(sri_code)', u'Código de SRI ya está en uso'),
+    ]
+
+    code = fields.Char(u'Código Interno:', size=4, required=True )
+    name = fields.Char(u'Nombre:', size = 50, required=True)
+    sri_code = fields.Char(u'Código SRI:', size = 4, required=True)
+

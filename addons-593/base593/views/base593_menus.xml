@@ -6,5 +6,8 @@
                 <menuitem id = "opt_base593_type_iva_retention" name = "Tipos de IVA" parent = "sub_base593_settings" sequence = "1" action = "base593_type_iva_retention_action"/>
                 <menuitem id = "opt_base593_type_retention" name = "Tipos de Retenciones" parent = "sub_base593_settings" sequence = "2" action = "base593_type_retention_action"/>
                 <menuitem id = "opt_base593_type_person" name = "Tipos de Personas" parent = "sub_base593_settings" sequence = "3" action = "base593_type_person_action"/>
+                <menuitem id = "opt_base593_type_document" name = "Tipos de Documento" parent = "sub_base593_settings" sequence = "4" action = "base593_type_document_action"/>
+                <menuitem id = "opt_base593_document_status" name = "Estado de Documentos" parent = "sub_base593_settings" sequence = "5" action = "base593_document_status_action"/>
+                
     </data>
 </odoo>
